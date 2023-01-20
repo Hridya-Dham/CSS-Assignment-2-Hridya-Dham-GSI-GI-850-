@@ -1,0 +1,160 @@
+/* -------------------------*/
+/* BASIC SETUP */
+/*-------------------------*/
+
+body {
+    font-size: 16px;
+}
+
+span {
+    display: block;
+    padding-right: 5px;
+    text-align: right;
+    font-size: 16px;
+}
+
+button {
+    vertical-align: middle;
+}
+
+/* -------------------------*/
+/* CLASSES & IDs */
+/*-------------------------*/
+
+.centered {
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Q1. Demo specifying the difference between rem,em,vh,vw, px.*/
+
+.Q1 .rem {
+    font-size: 5rem; /* 5rem => root font-size * 5 => 16*5 => 80px */
+    border: 2px solid black;
+}
+
+.Q1 .em {
+    position: relative;
+    font-size: 20px;
+    padding: 2em;
+    border: 2px solid red;
+}
+
+html body .Q1 .em span { /* Q2. chaining of commands */
+    position: absolute;
+    bottom: 1%;
+    right: 0.3%;
+    padding: 0em;
+}
+.vh {
+    border: 2px solid blue;
+}
+
+.vh h2 { /* Q2. chaining of commands */
+    font-size: 10vh;
+}
+
+.vw {
+    border: 2px solid purple;
+}
+
+.vw h2 { /* Q2. chaining of commands */
+    font-size: 10vh;
+}
+
+.px {
+    border: 2px solid brown;
+}
+.px h2{
+    font-size: 30px;
+}
+.px p {
+    font-size: 20px;
+}
+
+/* ------------------------------------------- */
+/* Q3. Demo specifying difference between css combinators (>,+,~) */
+
+.Q3-div > h4 { /* Child Selector */
+    color: yellowgreen;
+}
+
+.Q3 h4#des { /* Descendant Selector */
+    color: salmon;
+}
+
+.Q3-div + h4 { /* Adjacent Selector */
+    color: thistle;
+}
+
+#sib {
+    display: none;
+}
+.Q3 #sib ~ h4 { /* General Sibling Selector */
+    color:darkgreen;
+}
+
+/* ------------------------------------------- */
+
+/* Q4. Create a demo for css transition and transform. */
+
+.btn {
+    text-align: center;
+    display: inline-block;
+    border-radius: 4px;
+    border: none;
+    background-color: #37f41e;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 300px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 45%;
+    transition: background-color .5s; /* Use of Transition Property */
+    
+}
+
+.btn span {
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    transition: .5s; /* Use of Transition Property */
+}
+
+.btn:hover { 
+    background-color: lightcoral;
+}
+.btn:hover span {
+    display: none;
+    color: black;
+}
+
+button:hover::after {
+    font-size: 20px;
+    content: "YES!";
+  }
+
+.floatR {
+    float: right;
+}
+.Q4 span#transform {
+    
+    margin-top: 3%;
+} 
+
+.Q4 span#transform h3 {
+    
+    color: green;
+    padding: 5px;
+    outline: auto black;
+} 
+.Q4 img {
+    margin-right: 15px;
+}
+
+.Q4 img:hover {
+    transform: scaleX(-1); /* Use of Transform Property */
+}
+
+  

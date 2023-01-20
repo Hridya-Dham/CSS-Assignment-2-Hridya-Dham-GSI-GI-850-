@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>CSS ASSIGNMENT 2</title>
+  </head>
+  <body>
+    <h1 class="centered">CSS ASSIGNMENT 2</h1>
+    <section class="Q1">
+      <!-- Q1. Demo specifying the difference between rem,em,vh,vw,px. -->
+      <h2>A1. Demo specifying the difference between rem,em,vh,vw,px.</h2>
+      <div class="rem">
+        The font size of this div element is 5rem.
+        <span>* 5rem = 5 x 16(root font-size) = 80px</span>
+      </div>
+      <!-- refer class rem -->
+      <br />
+      <div class="em">
+        The padding of this div element is 2em.
+        <span class="em-span">* 2em = 2 x 20(current font-size) = 40px</span>
+      </div>
+      <!-- refer class em -->
+      <br />
+      <div class="vh">
+        <h2>Viewport Height</h2>
+        <span>* The font size of this h2 element is 10vh. </span>
+      </div>
+      <!-- refer class vh -->
+      <br />
+      <div class="vw">
+        <h2>Viewport Width</h2>
+        <span>* The font size of this h2 element is 10vw.</span>
+      </div>
+      <!-- refer class vw -->
+      <br />
+      <div class="px">
+        <h2>This heading has a font size of 30px</h2>
+        <p>This paragraph has a font size of 20px</p>
+        <span>* This is a absolute length.</span>
+      </div>
+      <!-- refer class vw -->
+    </section>
+    <br />
+    <section class="Q3">
+      <!-- Q3. Demo specifying difference between css combinators (>,+,~) -->
+
+      <h2>A3. Demo specifying difference between css combinators (>,+,~)</h2>
+      <div class="Q3-div">
+        <h4 id="child">
+          1. This is color "yellowgreen" which is applied through a Child
+          Selector(">").
+        </h4>
+        <h4 id="des">
+          2. This is color "salmon" which is applied through a Descendant
+          Selector(" ").
+        </h4>
+      </div>
+      <h4>
+        3. This is a color "thistle" which is applied through a Adjacent Sibling
+        Selector("+").
+      </h4>
+      <div id="sib">
+        <code>~~~~~~~~~~~~~~</code>
+      </div>
+      <h4>
+        4. This is a color "darkgreen" which is applied through a General
+        Sibling Selector("~").
+      </h4>
+    </section>
+    <br />
+    <section class="Q4">
+      <!-- Q4. Create a demo for css transition and transform. -->
+      <h2>A4. Create a demo for css transition and transform.</h2>
+      <button class="btn">
+        <span>Did you like my work ?</span>
+      </button>
+      <span id="transform" class="floatR"
+        ><h3>There is no "NO!" option!!</h3></span
+      >
+      <img src="img/4x.gif" alt="laughing emote" class="floatR" />
+    </section>
+  </body>
+</html>
